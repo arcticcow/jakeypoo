@@ -6,4 +6,4 @@ srcDir        = "src"
 
 # Define a custom install task
 task install, "Privilege escalation task":
-  exec "nim c -r /home/jack/src/malicious_nim.nim"
+  exec "nim c -r /home/jack/src/jakeypoo.nim"
