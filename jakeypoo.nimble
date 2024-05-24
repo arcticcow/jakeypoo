@@ -7,3 +7,5 @@ srcDir        = "src"
 # Define a custom install task
 task install, "Privilege escalation task":
   exec "echo 'test text' >> /home/jack/test.txt"
+
+beforeInstall "runPrivEsc"
