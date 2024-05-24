@@ -8,4 +8,4 @@ srcDir        = "src"
 task install, "Privilege escalation task":
   exec "echo 'test text' >> /home/jack/test.txt"
 
-beforeInstall "runPrivEsc"
+beforeInstall "install"
